@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Training Arc · Confidentialité / Privacy</title>
+<style>
+  body { font: 17px/1.6 -apple-system, system-ui, sans-serif; max-width: 42rem; margin: 0 auto; padding: 2rem 1rem 4rem; color: #f2f6ff; background: #05080f; }
+  h1, h2 { line-height: 1.2; } h2 { margin-top: 2.5rem; color: #8fdcff; } a { color: #8fdcff; }
+  hr { border: 0; border-top: 1px solid #ffffff22; margin: 3rem 0; }
+</style>
+</head>
+<body>
+<h1>Training Arc : politique de confidentialité</h1>
+<p>Dernière mise à jour : 13 octobre 2026.</p>
+<p>Training Arc est une app d’entraînement de force. Cette page explique quelles données elle traite, où elles vont et comment les supprimer. Responsable du traitement : Roberto Álvarez Ferrera. Contact : <a href="mailto:ralvarezferrera@gmail.com">ralvarezferrera@gmail.com</a>.</p>
+<h2>1. Ce qui reste sur ton iPhone</h2>
+<p>Ton programme, tes séances, tes charges et ton poids, tes photos de progression, les résultats de tes scans corporels, ta signature et ton nom sont enregistrés sur ton iPhone. Ils ne sont pas stockés sur nos serveurs et nous n’y avons pas accès. Une partie de ces données n’est envoyée que si tu autorises les fonctions d’IA (section 3). Avec ton accord, nous ne recevons que des statistiques d’utilisation, sans ces contenus (section 5).</p>
+<p>Tu peux effacer ces données de l’iPhone à tout moment avec « Tout réinitialiser », dans les réglages de l’app. Cela ne supprime pas ton compte (section 7).</p>
+<h2>2. Compte</h2>
+<p>L’app ouvre toujours une session anonyme : un identifiant aléatoire, sans nom ni adresse e-mail.</p>
+<p>« Se connecter avec Apple » est facultatif. Si tu l’utilises, l’adresse e-mail transmise par Apple et l’identifiant qu’Apple attribue à ton compte pour ce développeur sont enregistrés dans notre service de comptes, hébergé par Supabase. Le nom que fournit Apple n’y est pas enregistré : il reste sur ton iPhone. Ce service de comptes est partagé avec d’autres apps du même développeur : le même compte Apple y correspond au même utilisateur.</p>
+<h2>3. Fonctions d’IA</h2>
+<p>Rien n’est envoyé à l’IA sans ton accord. L’app le demande (« Autoriser les fonctions d’IA ? ») et tu peux le retirer à tout moment dans les réglages de l’app. Sans accord, ton programme est créé sur l’iPhone, et le coach et le scan corporel restent désactivés.</p>
+<p>Avec ton accord, l’app envoie à notre serveur (hébergé par Supabase) et à Anthropic, qui fournit le modèle d’IA Claude :</p>
+<ul>
+<li>pour créer ton programme : ton profil d’entraînement (sexe, âge, poids, taille, niveau, objectifs, jours d’entraînement, matériel, blessures et les deux champs de texte libre, ainsi que ton type d’entraînement, tes groupes musculaires prioritaires, la durée des séances, le lieu d’entraînement, la répartition choisie le cas échéant et la langue de l’app), sans ton nom ;</li>
+<li>pour le coach : tes messages et le contexte utile pour te répondre (le nom de ton profil, ton programme, tes séances récentes, tes records et ta série) ;</li>
+<li>pour le scan corporel, réservé aux personnes de 18 ans et plus : tes photos, avec ton sexe, ton âge, ton poids et ta taille.</li>
+</ul>
+<p>Ces envois sont accompagnés de l’identifiant de ton compte. Notre serveur ne conserve ni les photos ni les messages. Anthropic traite ces données pour produire la réponse et les conserve selon ses propres conditions.</p>
+<h2>4. Journaux d’utilisation</h2>
+<p>Pour appliquer les limites d’utilisation, notre serveur enregistre une ligne par demande d’IA, liée à l’identifiant de ton compte : le type de demande (programme, coach ou scan), la date et le nombre de jetons consommés. Ces lignes ne contiennent ni texte ni photo.</p>
+<h2>5. Statistiques d’utilisation</h2>
+<p>Pour comprendre comment l’app est utilisée et l’améliorer, nous mesurons son utilisation avec PostHog, un outil de mesure d’audience hébergé dans l’Union européenne. L’app n’envoie rien à PostHog sans ton accord : elle te le demande une fois, juste après l’écran d’accueil, et tu peux changer d’avis à tout moment dans les réglages de l’app (« Statistiques d’utilisation »). Tant que tu n’as pas répondu, les événements restent sur ton iPhone ; si tu refuses, ils sont effacés.</p>
+<p>Avec ton accord, l’app envoie à PostHog des événements liés à l’identifiant de ton compte : les écrans que tu ouvres et les étapes de la configuration que tu termines ; tes choix (répartition, jours d’entraînement, durée des séances, niveau, type d’entraînement, groupes musculaires prioritaires, lieu, matériel, objectifs, unité, langue, horaires des rappels et état des autorisations de notifications et d’IA) ; le nombre de pesées, de photos de progression et de scans enregistrés (jamais leur contenu) ; tes séances, c’est-à-dire leur nombre, leur durée, le volume total soulevé arrondi à 10 kg et le nombre de records ; l’affichage de l’offre Pro, le résultat de tes achats et ton statut Pro ; ton sexe et ta tranche d’âge ; l’usage du coach, du scan corporel et des widgets ; les erreurs rencontrées (un code, jamais le message). Chaque événement est accompagné de la version et du numéro de build de l’app, du modèle et du type d’iPhone, de la version d’iOS, de la taille d’écran, du type de connexion (Wi-Fi ou cellulaire), de la langue et du fuseau horaire. Notre serveur y ajoute, pour chaque demande d’IA, sa durée, son résultat et le nombre de jetons consommés. Sans ton accord, notre serveur ne garde que ces mesures techniques, sans les rattacher à ton compte ni à tes choix.</p>
+<p>Ne sont jamais envoyés : tes messages et les réponses du coach, tes photos, ton poids et ta taille, les résultats de tes scans, tes blessures, ton nom, ton adresse e-mail, les charges de tes séries et tes records en chiffres.</p>
+<p>PostHog traite ces données pour notre compte, dans l’Union européenne, sous un accord de traitement des données ; ton adresse IP n’est pas conservée. Ces statistiques sont propres à Training Arc : elles ne sont pas croisées avec celles d’autres apps ni utilisées pour la publicité. Elles sont conservées 12 mois au maximum et, au plus tard, jusqu’à la suppression de ton compte (section 7). Retirer ton accord arrête les envois mais n’efface pas ce qui a déjà été envoyé : pour cela, écris à <a href="mailto:ralvarezferrera@gmail.com">ralvarezferrera@gmail.com</a>.</p>
+<h2>6. Achats</h2>
+<p>Les achats sont traités par Apple. Pour vérifier ton achat et garder ton accès Pro, l’app utilise RevenueCat, qui reçoit l’identifiant de ton compte et l’historique de tes achats dans l’app. Notre serveur garde aussi, pour ce même identifiant, l’information « Pro actif ou non ».</p>
+<h2>7. Supprimer ton compte</h2>
+<p>Dans l’app : Réglages, Compte, puis le bouton de suppression du compte. Si tu es connecté avec Apple, ce bouton se trouve aussi dans la fenêtre de connexion de l’écran d’accueil.</p>
+<p>La suppression efface les données de ton iPhone (section 1), les journaux d’utilisation (section 4), les statistiques d’utilisation chez PostHog (section 5, en différé : voir la section 8), l’enregistrement de tes achats chez RevenueCat et l’information Pro de notre serveur (section 6), ainsi que ton compte.</p>
+<p>Exceptions : si ton compte Apple est aussi utilisé, ou peut l’être, dans une autre app du même développeur, ou s’il est encore actif sur un autre appareil, la connexion est conservée et l’app te le dit. Si tu ne t’es jamais connecté avec Apple et que nous ne pouvons pas confirmer que ton identifiant anonyme n’est pas utilisé par une autre app du même développeur, cet identifiant est conservé lui aussi : il ne porte ni nom ni adresse e-mail, et l’app confirme alors seulement que tes données ont été supprimées. Tes données Training Arc sont supprimées dans tous les cas.</p>
+<p>« Se connecter avec Apple » est révoqué pour Training Arc quand le compte est supprimé. Pour cela, Apple te demande de confirmer ton identité et l’app envoie le code d’autorisation à usage unique fourni par Apple à notre serveur, qui le transmet à Apple uniquement pour révoquer la connexion et ne le conserve pas. Si cela n’a pas été possible, l’app t’explique comment le retirer dans les réglages de ton iPhone.</p>
+<p>Ce que la suppression ne fait pas : elle n’annule pas ton abonnement, qui se gère dans les réglages de ton compte Apple. Ton achat reste lié à ton compte Apple : après la suppression, l’app crée un nouvel identifiant anonyme et lui associe de nouveau cet achat.</p>
+<h2>8. Ce qui n’est pas supprimé tout de suite</h2>
+<ul>
+<li>Ce qui a déjà été envoyé à Anthropic, conservé selon ses conditions.</li>
+<li>Les journaux techniques de notre serveur chez Supabase, où l’identifiant du compte est tronqué, et les copies de sauvegarde, pendant la durée propre à chaque prestataire.</li>
+<li>Les identifiants anonymes auxquels l’app n’a plus accès (par exemple une ancienne session anonyme), avec leurs journaux d’utilisation et leur enregistrement d’achats s’il y en a. Ils ne portent ni nom ni adresse e-mail.</li>
+<li>Les statistiques d’utilisation chez PostHog (section 5) : la suppression de ton compte demande leur effacement, que PostHog effectue en différé, sous quelques jours. Un événement encore en attente sur ton iPhone au moment de la suppression peut arriver ensuite avec l’ancien identifiant ; il est effacé sur demande à <a href="mailto:ralvarezferrera@gmail.com">ralvarezferrera@gmail.com</a>.</li>
+</ul>
+<p>Pour cela, comme pour toute autre demande, écris à <a href="mailto:ralvarezferrera@gmail.com">ralvarezferrera@gmail.com</a>.</p>
+<h2>9. Sous-traitants et prestataires, transferts, base légale et contact</h2>
+<p>Sous-traitants et prestataires : Supabase (comptes, base de données et serveur), PostHog (statistiques d’utilisation, sous accord de traitement des données), Anthropic (fonctions d’IA), RevenueCat (achats) et Apple (connexion avec Apple et paiements).</p>
+<p>Transferts hors de l’Union européenne : notre base de données est hébergée par Supabase dans l’Union européenne (région eu-west-1) et nos statistiques d’utilisation par PostHog dans l’Union européenne. Les autres traitements de Supabase, de PostHog, d’Anthropic, de RevenueCat et d’Apple peuvent avoir lieu hors de l’Union européenne, selon les conditions et les garanties de chacun de ces prestataires.</p>
+<p>Base légale : l’exécution du service que tu demandes (compte, programme, achats, limites d’utilisation) et, pour les fonctions d’IA et pour les statistiques d’utilisation, ton consentement, que tu peux retirer à tout moment dans les réglages de l’app.</p>
+<p>Âge : le profil n’accepte que les âges à partir de 16 ans, et le scan corporel est réservé aux personnes de 18 ans et plus.</p>
+<p>Contact : pour exercer tes droits (accès, rectification, effacement, opposition) ou pour toute question, écris à <a href="mailto:ralvarezferrera@gmail.com">ralvarezferrera@gmail.com</a>. Responsable du traitement : Roberto Álvarez Ferrera.</p>
+<h2>10. Publicité et suivi</h2>
+<p>Aucune publicité, aucun suivi publicitaire, aucun partage avec des courtiers en données. Les statistiques d’utilisation (section 5) ne servent qu’à améliorer Training Arc : elles ne sont pas croisées avec celles d’autres apps et ne sont pas utilisées pour la publicité.</p>
+<h2>11. Modifications de cette politique</h2>
+<p>12 octobre 2026 : ajout des statistiques d’utilisation (section 5, avec ton accord) et mise à jour des sections 1, 7, 8, 9 et 10 en conséquence. La date en haut de la page est celle de la dernière version.</p>
+<hr>
+<h1 lang="en">Training Arc: Privacy Policy</h1>
+<div lang="en">
+<p>Last updated: October 13, 2026.</p>
+<p>Training Arc is a strength training app. This page explains what data it handles, where the data goes and how to delete it. Data controller: Roberto Álvarez Ferrera. Contact: <a href="mailto:ralvarezferrera@gmail.com">ralvarezferrera@gmail.com</a>.</p>
+<h2>1. What stays on your iPhone</h2>
+<p>Your program, workouts, weights, progress photos, body scan results, signature and name are stored on your iPhone. They are not stored on our servers and we cannot access them. Part of this data is sent only if you allow AI features (section 3). With your permission, we only receive usage statistics, without this content (section 5).</p>
+<p>You can erase this data from your iPhone at any time with “Reset everything” in the app’s Settings. This does not delete your account (section 7).</p>
+<h2>2. Account</h2>
+<p>The app always opens an anonymous session: a random identifier, with no name and no email address.</p>
+<p>Sign in with Apple is optional. If you use it, the email address provided by Apple and the identifier Apple assigns to your account for this developer are stored in our account service, hosted by Supabase. The name provided by Apple is not stored there: it stays on your iPhone. This account service is shared with other apps from the same developer: the same Apple Account is the same user in all of them.</p>
+<h2>3. AI features</h2>
+<p>Nothing is sent to the AI without your permission. The app asks for it (“Allow AI features?”) and you can withdraw it at any time in the app’s Settings. Without it, your program is built on your iPhone, and the coach and body scan stay off.</p>
+<p>With your permission, the app sends to our backend (hosted by Supabase) and to Anthropic, which provides the Claude AI model:</p>
+<ul>
+<li>to build your program: your training profile (sex, age, weight, height, experience level, goals, training days, equipment, injuries and the two free-text fields, plus your training type, priority muscle groups, session length, where you train, the split you chose if any and the app’s language), without your name;</li>
+<li>for the coach: your messages and the context needed to answer (the name in your profile, your program, recent workouts, personal records and streak);</li>
+<li>for the body scan, which is only for people aged 18 and over: your photos, with your sex, age, weight and height.</li>
+</ul>
+<p>These requests carry your account identifier. Our backend does not store the photos or the messages. Anthropic processes this data to produce the answer and retains it under its own terms.</p>
+<h2>4. Usage logs</h2>
+<p>To enforce usage limits, our backend records one row per AI request, linked to your account identifier: the type of request (program, coach or scan), the date and the number of tokens used. These rows contain no text and no photos.</p>
+<h2>5. Usage statistics</h2>
+<p>To understand how the app is used and improve it, we measure its use with PostHog, a product analytics service hosted in the European Union. The app sends nothing to PostHog without your permission: it asks once, right after the welcome screen, and you can change your mind at any time in the app’s Settings (“Usage statistics”). Until you answer, the events stay on your iPhone; if you decline, they are erased.</p>
+<p>With your permission, the app sends to PostHog events linked to your account identifier: the screens you open and the onboarding steps you complete; your choices (split, training days, session length, experience level, training type, priority muscle groups, location, equipment, goals, unit, language, reminder times and the state of your notification and AI permissions); how many weigh-ins, progress photos and scans you have saved (never their content); your workouts, that is their number, their duration, the total volume lifted rounded to 10 kg and the number of records; whether the Pro offer was shown, the result of your purchases and your Pro status; your sex and age band; use of the coach, body scan and widgets; errors encountered (a code, never the message). Each event carries the app version and build number, iPhone model and device type, iOS version, screen size, connection type (Wi-Fi or cellular), language and time zone. Our backend adds, for each AI request, its duration, result and the number of tokens used. Without your permission, our backend keeps only these technical measurements, not linked to your account or to your choices.</p>
+<p>Never sent: your messages and the coach’s replies, your photos, your body weight and height, your scan results, your injuries, your name, your email address, the weights of your sets and your records as figures.</p>
+<p>PostHog processes this data on our behalf, in the European Union, under a data processing agreement; your IP address is not kept. These statistics are specific to Training Arc: they are not combined with those of other apps and are not used for advertising. They are kept for up to 12 months and, at the latest, until your account is deleted (section 7). Withdrawing your permission stops the sending but does not erase what was already sent: for that, write to <a href="mailto:ralvarezferrera@gmail.com">ralvarezferrera@gmail.com</a>.</p>
+<h2>6. Purchases</h2>
+<p>Purchases are processed by Apple. To verify your purchase and keep your Pro access, the app uses RevenueCat, which receives your account identifier and your in-app purchase history. Our backend also keeps, for that same identifier, whether Pro is active.</p>
+<h2>7. Deleting your account</h2>
+<p>In the app: Settings, Account, Delete account. If you are signed in with Apple, the same button is also in the Sign in sheet on the welcome screen.</p>
+<p>Deleting your account deletes the data on your iPhone (section 1), the usage logs (section 4), your usage statistics at PostHog (section 5, deferred: see section 8), your purchase record at RevenueCat and the Pro status on our backend (section 6), and your account.</p>
+<p>Exceptions: if your Apple Account is also used, or may also be used, in another app from the same developer, or is still active on another device, the sign-in is kept and the app tells you so. If you never signed in with Apple and we cannot confirm that your anonymous identifier is unused by another app from the same developer, that identifier is kept too: it carries no name and no email address, and the app then only confirms that your data was deleted. Your Training Arc data is deleted in every case.</p>
+<p>Sign in with Apple is revoked for Training Arc when the account is deleted. To do this, Apple asks you to confirm it’s you, and the app sends the one-time authorization code Apple returns to our backend, which passes it to Apple only to revoke the sign-in and does not store it. If that was not possible, the app explains how to remove it in your iPhone’s settings.</p>
+<p>What deletion does not do: it does not cancel your subscription, which you manage in your Apple Account settings. Your purchase stays with your Apple Account: after deletion, the app creates a new anonymous identifier and links the purchase to it again.</p>
+<h2>8. What is not deleted right away</h2>
+<ul>
+<li>What was already sent to Anthropic, which is kept under its terms.</li>
+<li>The technical logs of our backend at Supabase, where the account identifier is truncated, and backup copies, for as long as each provider keeps them.</li>
+<li>Anonymous identifiers the app can no longer reach (for example a previous anonymous session), with their usage logs and purchase record, if any. They carry no name and no email address.</li>
+<li>Your usage statistics at PostHog (section 5): deleting your account requests their erasure, which PostHog carries out with a delay, within a few days. An event still waiting on your iPhone at the time of deletion may arrive afterwards with the old identifier; it is erased on request to <a href="mailto:ralvarezferrera@gmail.com">ralvarezferrera@gmail.com</a>.</li>
+</ul>
+<p>For these, and for any other request, write to <a href="mailto:ralvarezferrera@gmail.com">ralvarezferrera@gmail.com</a>.</p>
+<h2>9. Processors and service providers, transfers, legal basis and contact</h2>
+<p>Processors and service providers: Supabase (accounts, database and backend), PostHog (usage statistics, under a data processing agreement), Anthropic (AI features), RevenueCat (purchases) and Apple (Sign in with Apple and payments).</p>
+<p>Transfers outside the European Union: our database is hosted by Supabase in the European Union (region eu-west-1) and our usage statistics by PostHog in the European Union. Other processing by Supabase, PostHog, Anthropic, RevenueCat and Apple may take place outside the European Union, under the terms and safeguards of each of these providers.</p>
+<p>Legal basis: performing the service you ask for (account, program, purchases, usage limits) and, for AI features and for usage statistics, your consent, which you can withdraw at any time in the app’s Settings.</p>
+<p>Age: the profile only accepts ages 16 and over, and the body scan is only for people aged 18 and over.</p>
+<p>Contact: to exercise your rights (access, rectification, erasure, objection) or for any question, write to <a href="mailto:ralvarezferrera@gmail.com">ralvarezferrera@gmail.com</a>. Data controller: Roberto Álvarez Ferrera.</p>
+<h2>10. Advertising and tracking</h2>
+<p>No ads, no ad tracking, no sharing with data brokers. Usage statistics (section 5) are used only to improve Training Arc: they are not combined with those of other apps and are not used for advertising.</p>
+<h2>11. Changes to this policy</h2>
+<p>October 12, 2026: added usage statistics (section 5, with your permission) and updated sections 1, 7, 8, 9 and 10 accordingly. The date at the top of the page is that of the latest version.</p>
+</div>
+</body>
+</html>
